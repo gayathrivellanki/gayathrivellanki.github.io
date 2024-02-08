@@ -3,6 +3,7 @@
     position: relative;
     width: 100%;
     background: #ffffff;
+    overflow-x: hidden;
 }
 .nav {
     padding: 2rem;
@@ -17,6 +18,7 @@
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
+    
 }
 .ml-auto{  
  margin-right: 20px;
@@ -48,7 +50,7 @@ nav ul li a{
     color: black;
     font-family: 'Nunito', sans-serif, arial;
     font-weight: 700;
-    /* font-weight: bold; */
+    
 }
 nav ul li a:hover{
     color: #f4c430;
@@ -82,9 +84,9 @@ section.profile {
 }
 .home-img img{
     width: 30vw;
-    background-size: cover; /* Cover the entire container with the background image */
-    background-position: center; /* Center the background image */
-    border-radius: 50%; /* Round the corners to create a circular shape */
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 50%; 
     overflow: hidden;
 }
 .btn{
@@ -184,8 +186,10 @@ section.education {
     align-items: center;
     font-family: 'Nunito', sans-serif, arial;
     font-weight: 700;
+    position: relative;
+    padding-left: 12%;
 }
-.mn-education{
+.mn-education {
     padding: 5rem;
     background-color: #fff;
 }
@@ -193,7 +197,43 @@ section.education {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    
     font-family: 'Nunito', sans-serif, arial;
     font-weight: 700;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.container h1{
+    font-weight: 900;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+.education ul {
+    margin-top: 10px;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+.education ul li {
+    font-size: 13pt;
+    padding-bottom: 10px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-md-8{
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+@media (min-width: 768px){
+    .col-md-8{
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+    
 }
